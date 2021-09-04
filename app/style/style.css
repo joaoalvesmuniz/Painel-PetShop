@@ -1,10 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
+.container-principal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.671);
+  display: grid;
+  grid-template-areas: "l r";
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100%;
+}
 
+.nav-left {
+  /* background-color: rgb(224, 15, 15); */
+  grid-area: l;
+  background-color: var(--preto);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
-.container-principal{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 100%;
+.nav-left h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: var(--amarelo);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5rem;
+}
+.nav-left a {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  color: var(--branco);
+  margin-left: 5rem;
+}
+
+.nav-left a:hover {
+  color: rgb(165, 240, 26);
+}
+
+.nav-right {
+  grid-area: r;
+  background-color: var(--branco);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-h1 {
+  border-bottom: 1px solid rgb(162, 154, 154);
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-h1 h1 {
+  font-family: sans-serif;
+  color: rgb(174, 176, 177);
+}
+
+.tabela {
+  margin-left: 3rem;
+  border-collapse: collapse;
+  margin-right: 3rem;
  
-};
+}
+.tabela th {
+  font-family: sans-serif;
+  border-bottom: 1px solid rgb(162, 154, 154);
+  padding: 0px 10px 10px 10px;
+ 
+}
+.tabela td {
+  font-family: sans-serif;
+  padding: 10px;
 
+  border-bottom: 1px solid rgb(162, 154, 154);
+}
+
+#modal {
+  background-color: rgba(38, 35, 35, 0.419);
+
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.td-botao{
+
+  display: flex;
+ flex-direction: column;
+  
+}
+.tb-botao{
+  
+  margin-bottom: 5px;
+  
+}
+.tb-botao:nth-child(1){
+
+    background-color: rgb(229, 255, 0);
+}
+.tb-botao:nth-child(2){
+
+  background-color: rgb(255, 17, 0);
+}
+  
+.tb-botao:nth-child(3){
+     
+  background-color: rgb(115, 255, 0);
+  width: 47px;
+}
+  
+        
+.modal-content {
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 3px 3px 20px rgb(165, 240, 26);
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-head {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  width: 75%;
+  border-bottom: 1px solid rgb(162, 154, 154);
+}
+
+.modal-head h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.modal-body{
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 77%;
+}
+.modal-body input{
+
+    width: 100%;
+}
+.modal-body input:nth-child(12){
+
+  padding: 30px;
+}
+
+.modal-body label{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bolder;
+}
+
+.modal-footer{
+
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   align-items: center;
+
+   
+}
+.modal-footer button{
+
+  margin: 50px 30px 30px 30px;
+}
+.modal-footer button:nth-child(1) {
+
+   font-family: "Open Sans Condensed", sans-serif;
+     padding: 10px;
+     width: 300px;
+     background-color: rgb(30, 232, 63);
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.modal-footer button:nth-child(2) {
+
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(232, 30, 50);
+ margin-top: 10px;
+ font-size: large;
+ 
+}
+
+
+
+
+@media only screen and (max-width: 920px) {
+}

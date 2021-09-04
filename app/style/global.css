@@ -3,11 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 
-  --azulMarinho:#355c7d;
-  --roxoEscuro:#6C5B7B;
-  --salmaoEscuro: #C06C84;
-  --salmaoClaro: #F67280;
-  --bege: #F8B195;
+ --preto: #0F0A0A;
+ --branco: #F5EFED;
+ --amarelo: #BDBF09;
 }
 
 body{

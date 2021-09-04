@@ -1,24 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style/global.css" rel="stylesheet">
-    <link href="./style/style.css" rel="stylesheet">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/global.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" />
     <title>Love-PetShop</title>
-</head>
-<body> 
-     <div class="container-principal">
-         
-        <div class="nav-left">Nav-Left</div>
+  </head>
+  <body>
+    <div class="container-principal">
+      <div class="nav-left">
+        <h1>LOVE-PET</h1>
+        <a href="./index.html">Home</a>
+        <a href="./home.html">Dashboard</a>
+        <a href="#">Calendario</a>
+        <a href="#">Pacotes</a>
+        <a href="#">Clientes</a>
+        <a href="#">Funcionarios</a>
+      </div><!--Menu de opcoes-->
 
-        <div class="nav-right">Nav-Right</div>
-         
-     </div>
-    
+      <div class="nav-right">
 
+        <table class="tabela">
+            <div class="container-h1">
+                <h1>Agendamento</h1>
+                <button id="bt-cadastrar" onclick="openmodal()">Cadastrar</button>
+            </div>
+           
+          <thead>
+             
+            <tr>
+              <th>Id</th>
+              <th>N/Dono</th>
+              <th>N/Animal</th>
+              <th>Raça</th>
+              <th>Telefone</th>
+              <th>Situação</th>
+              <th>Data e Hora</th>
+              <th >Ação</th>
+              <th>Observacao</th>
+            </tr>
+          </thead>
+
+          <tbody>
+              <tr id="tr-body">
+                  <td>1</td>
+                  <td>Oscar</td>
+                  <td>Bili</td>
+                  <td>PitBull</td>
+                  <td>(11)98765-3898</td>
+                  <td>Agendado</td>
+                  <td>21-09-92-14h00</td>
+                 <td>
+                 <button>Editar</button>
+                 <button>Apagar</button>
+                 <button>&#10004</button>
+               
+                </td>
+                 <td>Nao lava a pata direita</td>
+              </tr>
+             
+          </tbody>
+        </table>
+        <div class="dv-modal" id="modal">
+          <div class="modal-content">
+                            
+            <div class="modal-head">
+
+                <h3>Cadastro de Pedido</h3>
+            </div>
+
+            <div class="modal-body">
+              
+               <label for="nome">Nome Dono:</label>
+              <input type="text" id="nome" required>
+               
+              <label for="nome-animal">Nome Animal:</label>
+              <input type="text" id="nome-animal">
+
+              <label for="raça">Raça:</label>
+              <input type="text" id="raca">
+
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone">
+
+              <label for="data-hora">Data-Hora:</label>
+              <input type="datetime-local" id="data-hora">
+
+              <label for="observacao">Observacao:</label>
+              <input type="text" id="observacao">
+
+              
+            </div>
+
+            <div class="modal-footer">
+         
+              <button onclick="enviar()">Enviar</button>
+               <button onclick="fechar()">Fechar</button>
+ 
+             </div>
+           
+
+          </div>
+
+         
+        </div>
+
+      </div>
+
+    </div><!--Div principal-->
+
+
+ 
+    </div>
 
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
